@@ -94,7 +94,7 @@ def codes(text,user_):
                 n8=sheet.row(new8)[1].value
                 n9=sheet.row(new9)[1].value
                 api.send_direct_message( user = user_ , text= now +"\n"+  sheet.cell_value(rowx=new1, colx=0)+"\n"+ "Growth"+ " - " +n2  +"\n"+"Daily Dividend"+ " - "+n1  +"\n"+ "Weekly Dividend"+ " - "+n4  +"\n" +"Monthly Dividend"+ " - "+n3)
-                api.send_direct_message( user = user_ , text= "Axis Banking Debt Fund- Direct Plan" +"\n"+ "Growth"+" - "+n7 +"\n"+"Monthly Dividend"+ " - "+n8 +"\n"+"Daily Dividend"+ " - "+n6 +"\n" +"Weekly Dividend"+ " - "+n9 +"\n"+ "Bonus"+" - "+n5)
+                api.send_direct_message( user = user_ , text= "Banking Debt Fund- Direct Plan" +"\n"+ "Growth"+" - "+n7 +"\n"+"Monthly Dividend"+ " - "+n8 +"\n"+"Daily Dividend"+ " - "+n6 +"\n" +"Weekly Dividend"+ " - "+n9 +"\n"+ "Bonus"+" - "+n5)
                 api.send_direct_message( user = user_ ,text= msg +"\n"+ lnk +"\n"+ tmsg )
                 print 'ok'
             elif(i==1):     #CM
@@ -113,7 +113,7 @@ def codes(text,user_):
                 n6=sheet.row(new6)[1].value
                 n7=sheet.row(new7)[1].value
                 api.send_direct_message( user = user_ , text= now +"\n"+  sheet.cell_value(rowx=new1, colx=0)+"\n"+ "Growth"+" - "+n2 +"\n"+ "Regular Dividend"+" - "+n1  +"\n"+ "Half Yearly Dividend"+" - "+n3)
-                api.send_direct_message( user = user_ , text= "Axis Constant Maturity Fund- Direct Plan"  +"\n"+ "Growth"+" - "+n6 +"\n"+ "Regular Dividend "+" - "+n5 +"\n"+"Half Yearly Dividend"+" - "+n7 +"\n"+"Bonus"+" - "+n4 )
+                api.send_direct_message( user = user_ , text= "Constant Maturity Fund- Direct Plan"  +"\n"+ "Growth"+" - "+n6 +"\n"+ "Regular Dividend "+" - "+n5 +"\n"+"Half Yearly Dividend"+" - "+n7 +"\n"+"Bonus"+" - "+n4 )
                 api.send_direct_message( user = user_ ,text= msg +"\n"+ lnk+"\n"+  tmsg)
                 print 'ok'
             elif(i==2):
@@ -130,7 +130,7 @@ def codes(text,user_):
                 n5=sheet.row(new5)[1].value
                 n6=sheet.row(new6)[1].value
                 api.send_direct_message( user = user_ , text= now +"\n"+  sheet.cell_value(rowx=new1, colx=0)+"\n"+ "Growth"+" - "+n4  +"\n"+"Quarterly Dividend"+ " - "+n6 +"\n" +"Half Yearly Dividend"+ " - "+n5)
-                api.send_direct_message( user = user_ , text= "Axis Dynamic Bond Fund- Direct Plan"  +"\n"+ "Growth"+" - "+n1 +"\n"+ "Half Yearly Dividend "+" - "+n2 +"\n"+"Quarterly Dividend"+" - "+n3)
+                api.send_direct_message( user = user_ , text= "Dynamic Bond Fund- Direct Plan"  +"\n"+ "Growth"+" - "+n1 +"\n"+ "Half Yearly Dividend "+" - "+n2 +"\n"+"Quarterly Dividend"+" - "+n3)
                 api.send_direct_message( user = user_ ,text= msg +"\n"+ lnk +"\n"+ tmsg)
                 print 'ok'
             elif(i==3):
@@ -143,7 +143,7 @@ def codes(text,user_):
                 n3=(sheet.row(new3)[1].value)
                 n4=(sheet.row(new4)[1].value)
                 api.send_direct_message( user = user_ , text= now +"\n"+  sheet.cell_value(rowx=new1, colx=0)+"\n"+ "Growth" + " - "+n4  +"\n"+ "Dividend"+ " - "+n3)
-                api.send_direct_message( user = user_ , text= "Axis Enhanced Arbitrage Fund - Direct Plan" +"\n"+ "" + "Direct Growth "+" - "+n2  +"\n"+ "Direct Dividend" + " - "+n1)
+                api.send_direct_message( user = user_ , text= "Enhanced Arbitrage Fund - Direct Plan" +"\n"+ "" + "Direct Growth "+" - "+n2  +"\n"+ "Direct Dividend" + " - "+n1)
                 api.send_direct_message( user = user_ ,text= msg +"\n"+ lnk +"\n"+ tmsg)
                 print 'ok'
             elif(i==4):
@@ -156,7 +156,7 @@ def codes(text,user_):
                 n3=(sheet.row(new3)[1].value)
                 n4=(sheet.row(new4)[1].value)
                 api.send_direct_message( user = user_ , text= now +"\n"+  sheet.cell_value(rowx=new1, colx=0)+"\n"+ "Growth" + " - "+n2  +"\n"+ "Dividend"+ " - "+n1)
-                api.send_direct_message( user = user_ , text= "Axis Equity Fund - Direct Plan" +"\n"+ "Direct Growth "+ " - "+n4  +"\n"+ "Direct Dividend" + " - "+n3)
+                api.send_direct_message( user = user_ , text= "Equity Fund - Direct Plan" +"\n"+ "Direct Growth "+ " - "+n4  +"\n"+ "Direct Dividend" + " - "+n3)
                 api.send_direct_message( user = user_ ,text= msg +"\n"+ lnk +"\n"+ tmsg)
                 print 'ok'
             elif(i==5):
@@ -173,7 +173,7 @@ def codes(text,user_):
                 n5=(sheet.row(new5)[1].value)
                 n6=(sheet.row(new6)[1].value)
                 api.send_direct_message( user = user_ , text= now +"\n"+  sheet.cell_value(rowx=new1, colx=0)+"\n"+ "Growth" + " - "+n4  +"\n"+ "Weekly Dividend" + " - "+n6  +"\n"+ "Monthly Dividend" + " - "+n5 )
-                api.send_direct_message( user = user_ , text= "Axis Fixed Income Opportunities Fund - Direct Plan" +"\n"+ "Growth" + " - "+n1 +"\n"+ "Weekly Dividend" + " - "+n3 +"\n"+ "Monthly Dividend" + " - "+n2)
+                api.send_direct_message( user = user_ , text= "Fixed Income Opportunities Fund - Direct Plan" +"\n"+ "Growth" + " - "+n1 +"\n"+ "Weekly Dividend" + " - "+n3 +"\n"+ "Monthly Dividend" + " - "+n2)
                 api.send_direct_message( user = user_ ,text= msg +"\n"+ lnk +"\n"+ tmsg)
                 print 'ok'
             elif(i==6):
@@ -186,7 +186,7 @@ def codes(text,user_):
                 n3=(sheet.row(new3)[1].value)
                 n4=(sheet.row(new4)[1].value)
                 api.send_direct_message( user = user_ , text= now +"\n"+  sheet.cell_value(rowx=new1, colx=0) +"\n"+ "Growth" + " - "+n2  +"\n"+ "Dividend" + " - "+n1)
-                api.send_direct_message( user = user_ , text= "Axis Focus 25 Fund - Direct Plan" +"\n"+ "Growth "+ " - "+n4  +"\n"+ "Dividend" + " - "+n3)
+                api.send_direct_message( user = user_ , text= "Focus 25 Fund - Direct Plan" +"\n"+ "Growth "+ " - "+n4  +"\n"+ "Dividend" + " - "+n3)
                 api.send_direct_message( user = user_ ,text= msg +"\n"+ lnk+"\n"+tmsg)
                 print 'ok'
             elif(i==7): #AG
@@ -205,7 +205,7 @@ def codes(text,user_):
                 n3=(sheet.row(new3)[1].value)
                 n4=(sheet.row(new4)[1].value)
                 api.send_direct_message( user = user_ , text= now +"\n"+  sheet.cell_value(rowx=new1, colx=0) +"\n"+ "Growth" + " "+n2  +"\n"+ "Dividend" + " "+n1)
-                api.send_direct_message( user = user_ , text= "Axis Gold Fund - Direct Plan" +"\n"+ "Growth "+ " - "+n4  +"\n"+ "Dividend" + " - "+n3)
+                api.send_direct_message( user = user_ , text= "Gold Fund - Direct Plan" +"\n"+ "Growth "+ " - "+n4  +"\n"+ "Dividend" + " - "+n3)
                 api.send_direct_message( user = user_ ,text= msg +"\n"+ lnk +"\n"+tmsg)
                 print 'ok'
             elif(i==9):    #IF
@@ -222,7 +222,7 @@ def codes(text,user_):
                 n5=(sheet.row(new5)[1].value)
                 n6=(sheet.row(new6)[1].value)
                 api.send_direct_message( user = user_ , text= now +"\n"+  sheet.cell_value(rowx=new1, colx=0)+"\n"+ "Growth"+" - "+n4  +"\n"+"Quarterly Dividend"+ " - "+n6 +"\n" +"Half Yearly Dividend"+ " - "+n5)
-                api.send_direct_message( user = user_ , text= "Axis Income Fund- Direct Plan"  +"\n"+ "Growth"+" - "+n1 +"\n"+ "Half Yearly Dividend "+" - "+n2 +"\n"+"Quarterly Dividend"+" - "+n3)
+                api.send_direct_message( user = user_ , text= "Income Fund- Direct Plan"  +"\n"+ "Growth"+" - "+n1 +"\n"+ "Half Yearly Dividend "+" - "+n2 +"\n"+"Quarterly Dividend"+" - "+n3)
                 api.send_direct_message( user = user_ ,text= msg +"\n"+ lnk +"\n"+ tmsg)
                 print 'ok'
             elif(i==10):
@@ -243,7 +243,7 @@ def codes(text,user_):
                 n7=(sheet.row(new7)[1].value)
                 n8=(sheet.row(new8)[1].value)
                 api.send_direct_message( user = user_ , text= now +"\n"+  sheet.cell_value(rowx=new1, colx=0)+"\n"+ "Growth"+" - "+n2  +"\n"+"Quarterly Dividend"+ " - "+n4 +"\n" +"Half Yearly Dividend"+ " - "+n3 +"\n" +"Annual"+ " - "+n1 )
-                api.send_direct_message( user = user_ , text= "Axis Income Saver Fund- Direct Plan"  +"\n"+ "Growth"+" - "+n6 +"\n"+ "Quarterly Dividend "+" - "+n8 +"\n"+"Half Yearly Dividend"+" - "+n7 +"\n" +"Annual"+ " - "+n5)
+                api.send_direct_message( user = user_ , text= "Income Saver Fund- Direct Plan"  +"\n"+ "Growth"+" - "+n6 +"\n"+ "Quarterly Dividend "+" - "+n8 +"\n"+"Half Yearly Dividend"+" - "+n7 +"\n" +"Annual"+ " - "+n5)
                 api.send_direct_message( user = user_ ,text= msg +"\n"+ lnk + "\n" +tmsg)
                 print 'ok'
             elif(i==11):
@@ -274,8 +274,8 @@ def codes(text,user_):
                 n12=(sheet.row(new12)[1].value)
                 n13=(sheet.row(new13)[1].value)
                 api.send_direct_message( user = user_ , text= now +"\n"+  sheet.cell_value(rowx=new1, colx=0)+"\n"+ "Growth"+ " - " +n7  +"\n"+"Daily Dividend"+ " - "+n6  +"\n"+ "Weekly Dividend"+ " - "+n9  +"\n" +"Monthly Dividend"+ " - "+n8)
-                api.send_direct_message( user = user_ , text= "Axis Liquid Fund- Retail Plan" +"\n"+ "Growth"+" - "+n11 +"\n"+" Daily Dividend"+ " - "+n10 +"\n" +" Weekly Dividend"+ " - "+n13+"\n"+" Monthly Dividend"+ " - "+n12)
-                api.send_direct_message( user = user_ , text= "Axis Liquid Fund- Direct Plan" +"\n"+ "Growth_"+" - "+n3 +"\n"+"Daily Dividend"+ " - "+n2 +"\n" +"Weekly Dividend"+ " - "+n5+"\n"+"Monthly Dividend"+ " - "+n4  +"\n"+ "Direct Bonus"+" - "+n1)
+                api.send_direct_message( user = user_ , text= "Liquid Fund- Retail Plan" +"\n"+ "Growth"+" - "+n11 +"\n"+" Daily Dividend"+ " - "+n10 +"\n" +" Weekly Dividend"+ " - "+n13+"\n"+" Monthly Dividend"+ " - "+n12)
+                api.send_direct_message( user = user_ , text= "Liquid Fund- Direct Plan" +"\n"+ "Growth_"+" - "+n3 +"\n"+"Daily Dividend"+ " - "+n2 +"\n" +"Weekly Dividend"+ " - "+n5+"\n"+"Monthly Dividend"+ " - "+n4  +"\n"+ "Direct Bonus"+" - "+n1)
                 api.send_direct_message( user = user_ ,text= msg +"\n"+ lnk +"\n " + tmsg)
                 print 'ok'
             elif(i==12):
@@ -288,7 +288,7 @@ def codes(text,user_):
                 n3=(sheet.row(new3)[1].value)
                 n4=(sheet.row(new4)[1].value)
                 api.send_direct_message( user = user_ , text= now +"\n"+  sheet.cell_value(rowx=new1, colx=0) +"\n"+ "Growth" + "-"+n2  +"\n"+ "Dividend" + " -"+n1)
-                api.send_direct_message( user = user_ , text= "Axis Long Term Equity Fund - Direct Plan" +"\n"+ " Growth "+ " - "+n4  +"\n"+ " Dividend" + " - "+n3)
+                api.send_direct_message( user = user_ , text= "Long Term Equity Fund - Direct Plan" +"\n"+ " Growth "+ " - "+n4  +"\n"+ " Dividend" + " - "+n3)
                 api.send_direct_message( user = user_ ,text= msg +"\n"+ lnk+"\n"+ tmsg)
                 print 'ok'
             elif(i==13):
@@ -301,7 +301,7 @@ def codes(text,user_):
                 n3=(sheet.row(new3)[1].value)
                 n4=(sheet.row(new4)[1].value)
                 api.send_direct_message( user = user_ , text= now +"\n"+  sheet.cell_value(rowx=new1, colx=0) +"\n"+ "Growth" + " - "+n2  +"\n"+ "Dividend" + " - "+n1)
-                api.send_direct_message( user = user_ , text= "Axis Mid Cap Fund - Direct Plan" +"\n"+ " Growth "+ " - "+n4  +"\n"+ " Dividend" + " - "+n3)
+                api.send_direct_message( user = user_ , text= "Mid Cap Fund - Direct Plan" +"\n"+ " Growth "+ " - "+n4  +"\n"+ " Dividend" + " - "+n3)
                 api.send_direct_message( user = user_ ,text= msg +"\n"+ lnk +"\n"+ tmsg)
                 print 'ok'
             elif(i==14):
@@ -328,8 +328,8 @@ def codes(text,user_):
                 n10=(sheet.row(new10)[1].value)
                 n11=(sheet.row(new11)[1].value)
                 api.send_direct_message( user = user_ , text= now +"\n"+  sheet.cell_value(rowx=new1, colx=0)+"\n"+ "Growth"+ " - " +n5  +"\n"+"Monthly Dividend"+ " - "+n6   +"\n" +"Regular Dividend"+ " - "+n7  +"\n"+ "Weekly Dividend"+ " - "+ n8   +"\n" +"Bonus"+ " - "+n4)
-                api.send_direct_message( user = user_ , text= "Axis Short Term Fund- Retail Plan" +"\n"+ "Growth"+" - "+n9 +"\n"+"Monthly Dividend"+ " - "+n10 +"\n" +"Weekly Dividend"+ " - "+n11)
-                api.send_direct_message( user = user_ , text= "Axis Short Term Fund- Direct Plan" +"\n"+ "Growth"+" - "+n1 +"\n"+"Monthly Dividend"+ " - "+n2 +"\n" +"Direct Weekly Dividend"+ " - "+n3)
+                api.send_direct_message( user = user_ , text= "Short Term Fund- Retail Plan" +"\n"+ "Growth"+" - "+n9 +"\n"+"Monthly Dividend"+ " - "+n10 +"\n" +"Weekly Dividend"+ " - "+n11)
+                api.send_direct_message( user = user_ , text= "Short Term Fund- Direct Plan" +"\n"+ "Growth"+" - "+n1 +"\n"+"Monthly Dividend"+ " - "+n2 +"\n" +"Direct Weekly Dividend"+ " - "+n3)
                 api.send_direct_message( user = user_ ,text= msg +"\n"+ lnk +"\n"+ tmsg)
                 print 'ok'
             elif(i==15):
@@ -360,8 +360,8 @@ def codes(text,user_):
                 n12=(sheet.row(new12)[1].value)
                 n13=(sheet.row(new13)[1].value)
                 api.send_direct_message( user = user_ , text= now +"\n"+  sheet.cell_value(rowx=new1, colx=0)+"\n"+ "Growth"+ " - " +n7  +"\n"+"Daily Dividend"+ " - "+n6  +"\n" +"Weekly Dividend"+ " - "+n9  +"\n"+ "Monthly Dividend"+ " - "+ n8)
-                api.send_direct_message( user = user_ , text= "Axis Treasury Advantage Fund- Direct Plan" +"\n"+ "Growth"+" - "+n3 +"\n"+"Daily Dividend"+ " - "+n2 +"\n" +"Weekly Dividend"+ " - "+n5 +"\n" +"Monthly Dividend"+ " - "+n4 +"\n"+"Bonus"+ " - "+n1)
-                api.send_direct_message( user = user_ , text= "Axis Treasury Advantage Fund- Retail Plan" +"\n"+ "Growth"+" - "+n11 +"\n"+"Daily Dividend"+ " - "+n10 +"\n" +"Weekly Dividend"+ " - "+n13+"\n"+"Monthly Dividend"+ " - "+n12)
+                api.send_direct_message( user = user_ , text= "Treasury Advantage Fund- Direct Plan" +"\n"+ "Growth"+" - "+n3 +"\n"+"Daily Dividend"+ " - "+n2 +"\n" +"Weekly Dividend"+ " - "+n5 +"\n" +"Monthly Dividend"+ " - "+n4 +"\n"+"Bonus"+ " - "+n1)
+                api.send_direct_message( user = user_ , text= "Treasury Advantage Fund- Retail Plan" +"\n"+ "Growth"+" - "+n11 +"\n"+"Daily Dividend"+ " - "+n10 +"\n" +"Weekly Dividend"+ " - "+n13+"\n"+"Monthly Dividend"+ " - "+n12)
                 api.send_direct_message( user = user_ ,text= msg +"\n"+ lnk+"\n"+ tmsg)
                 print 'ok'
             elif(i==16):
@@ -374,7 +374,7 @@ def codes(text,user_):
                 n3=(sheet.row(new3)[1].value)
                 n4=(sheet.row(new4)[1].value)
                 api.send_direct_message( user = user_ , text= now +"\n"+  sheet.cell_value(rowx=new1, colx=0) +"\n"+ "Growth" + " "+n2  +"\n"+ "Dividend" + " "+n1)
-                api.send_direct_message( user = user_ , text= "Axis Triple Advantage Fund - Direct Plan" +"\n"+ "Growth "+ " - "+n4  +"\n"+ "Dividend" + " - "+n3)
+                api.send_direct_message( user = user_ , text= "Triple Advantage Fund - Direct Plan" +"\n"+ "Growth "+ " - "+n4  +"\n"+ "Dividend" + " - "+n3)
                 api.send_direct_message( user = user_ ,text= msg +"\n"+ lnk +"\n"+ tmsg)
                 print 'ok'
             elif(i==17):
@@ -391,7 +391,7 @@ def codes(text,user_):
                 n5=(sheet.row(new5)[1].value)
                 n6=(sheet.row(new6)[1].value)
                 api.send_direct_message( user = user_ , text= now +"\n"+  sheet.cell_value(rowx=new1, colx=0) +"\n"+ "Growth" + " "+n4  +"\n"+ "Monthly Dividend" + " "+n5 +"\n"+ "Quarterly Dividend" + " - "+n6)
-                api.send_direct_message( user = user_ , text= "Axis Equity Saver Fund - Direct Plan" +"\n"+ "Growth "+ " - "+n1 +"\n"+ "Monthly Dividend" + " - "+n2 +"\n"+ "Quarterly Dividend" + " - "+n3)
+                api.send_direct_message( user = user_ , text= "Equity Saver Fund - Direct Plan" +"\n"+ "Growth "+ " - "+n1 +"\n"+ "Monthly Dividend" + " - "+n2 +"\n"+ "Quarterly Dividend" + " - "+n3)
                 api.send_direct_message( user = user_ ,text= msg +"\n"+ lnk +"\n"+ tmsg)
                 print 'ok'
 
