@@ -5,7 +5,7 @@ import codecs
 import sys
 import datetime
 from pytz import timezone
-from time import strftime
+from time import strftimes
 from keys import keys
 import xlrd
 import dt
@@ -426,10 +426,7 @@ for mention in statuses:
 
 #------------------------------------------------------------------------------------------------------------
 
-
-
-# USER INFO GATHERED FROM COMMAND LINE
-theUserName = 'AxisMutualFund'
+theUserName = 'Notify_T'
 archiveFile = 'data.txt'
 homeTZ = 'Asia/Kolkata'
 homeTZ = pytz.timezone(homeTZ)
@@ -460,9 +457,6 @@ if os.path.exists(idFile):
     print "Latest Tweet ID: " +str(idValue)
     print "Gathering unarchived tweets... "
 
-    # Get first page of unarchived statuses
-    #statuses = api.mentions_timeline(count=10,since_id=idValue)
-    # Get User information for display
     if statuses != []:
         theUser = statuses[0].author
         total_status_count = theUser.statuses_count
@@ -499,10 +493,9 @@ else:
 
         # Get new page of statuses based on current id location
         statuses = api.mentions_timeline(count=10,max_id=theMaxId)
-        print "%d of %d tweets processed..." % (cur_status_count, total_status_count)
+        print "%d of %d tweets processed" % (cur_status_count, total_status_count)
 
-    print "- - - - - - - - - - - - - - - - -"
-    # print "Total Statuses Retrieved: " + (len(status_list))
+   
     print "Writing statuses to log file:"
 
 # Write tweets to archive
@@ -510,7 +503,7 @@ if status_list != []:
     print "Writing tweets to archive..."
     print "Archive file:"
     print archiveFile
-    print "- - - - - - - - - - - - - - - - -"
+   
     f = codecs.open(archiveFile, 'a', 'utf-8')
     for status in reversed(status_list):
         theTime = utc.localize(status.created_at).astimezone(homeTZ)
