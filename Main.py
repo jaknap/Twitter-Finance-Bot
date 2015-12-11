@@ -11,6 +11,7 @@ import xlrd
 import dt
 book = xlrd.open_workbook("new_ch.xlsx")
 
+#Initiate OAuth
 CONSUMER_KEY = keys['consumer_key']
 CONSUMER_SECRET = keys['consumer_secret']
 ACCESS_TOKEN = keys['access_token']
@@ -28,15 +29,15 @@ auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
 sheet = book.sheet_by_index(0)
 
+#default exit loop
 def exit(text,user_):
     for i in range(18):
         if(val[i]==text and user_!='@Notify_T'):
             a=strftime("%H:%M")
             if(a=="17:31"):
-                #api.send_direct_message( user = user_ , text= "Please wait, values being updated")
                 sys.exit()
 
-
+#formatting the date in the required manner
 def date_():
     new = dt.d
     newstr = new.replace(",", "")
@@ -47,7 +48,7 @@ def date_():
     fn = day + "-"+ month+"-"+ year
     return fn
 
-
+#code to send an infographic to the user 
 def list_(text,user_):
     if(text=="@Notify_T #Tweet4NAV" or text=="@Notify_T #Tweet4Nav" or text=="@Notify_T #TWEET4NAV" or text=="@Notify_T #tweet4nav" or text=="@Notify_T #tweet4Nav" or text=="@Notify_T #Tweet4nav"):
         #msg = 'Mutual Fund Investments are subject to market risks, read all scheme related documents carefully'
@@ -58,13 +59,13 @@ def list_(text,user_):
         lnk = 'For Statutory details http://bit.ly/1URUqPe'
         api.update_with_media('/home/jaknap/tw.png', status='@'+user_+" "+ "Tweet the shortcode and we will DM you the NAV." +"\n" + lnk)
 
-
+#shortcodes to access the service
 handle = '@Notify_T'
 val = [' #BD', ' #CM', ' #DB', ' #EA', ' #EF', ' #IO', ' #AF', ' #AG',
         ' #GO', ' #IF', ' #IS', ' #CF', ' #TS', ' #MC', ' #ST', ' #TA', ' #TP', ' #ES' ]
 low = [x.lower() for x in val]
 
-
+#main loop to check the shortcode requested and send across the corresponding D.M.
 def codes(text,user_):
     for i in range(18):
         if(handle+val[i]==text or handle+low[i]==text):
@@ -395,6 +396,7 @@ def codes(text,user_):
                 api.send_direct_message( user = user_ ,text= msg +"\n"+ lnk +"\n"+ tmsg)
                 print 'ok'
 
+#verify if the user is following the Twitter handle
 def verify(user_id):
     verify_= api.show_friendship(target_id=user_id)
     name=[mention_.followed_by for mention_ in verify_]
@@ -410,6 +412,7 @@ def verify(user_id):
 
 statuses= api.mentions_timeline(since_id=idValue)
 
+#monitoring the mentions to the Twitter handle
 for mention in statuses:
     text= mention.text
     user_= mention.user.screen_name
@@ -426,6 +429,7 @@ for mention in statuses:
 
 #------------------------------------------------------------------------------------------------------------
 
+#The Archiving part begins
 theUserName = 'Notify_T'
 archiveFile = 'data.txt'
 homeTZ = 'Asia/Kolkata'
